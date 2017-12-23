@@ -1,0 +1,65 @@
+#!/bin/bash
+
+#First part
+#1
+
+touch ./.probniy.txt
+ls
+ls -la
+
+#ls -a shows you files in alphabet order
+#ls -l shows you in list
+#ls -la - both
+
+#2
+
+#There are lots of hidden files & directories like
+#.bash_history .bash_logout .viminfo .profile
+#/.cache /.local /.config
+
+#3
+#Yes, find does. It shows all hidden directories
+
+#Second Part
+#1
+which cat
+whereis cat
+whereis grep
+which grep
+which find
+whereis find
+whereis less
+
+#2
+
+echo $PATH
+#Yes, it contains
+
+#3
+
+echo "
+#include <stdio.h>
+int main() {
+	printf(\"how you doin?\");
+	return 0;
+}" >> program.c
+gcc exe_prog.c program.c
+chmod 755 exe_prog
+./exe_prog
+cd ..
+./studying/exe_prog
+cd studying/
+rm ./program.c ./exe_prog
+export PATH=$PATH:/home/students/17200/shevyakov
+
+#3
+
+cd ~
+touch shared.txt
+ls -la
+#rights: r - read, x - execute, w - write
+chmod 400 shared.txt
+chown usova shared.txt
+rm shared.txt
+#chown to right partner and return to left partner;
+#try this all with directories
