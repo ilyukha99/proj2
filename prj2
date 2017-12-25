@@ -44,7 +44,6 @@ int main() {
 	return 0;
 }" >> program.c
 gcc exe_prog.c program.c
-chmod 755 exe_prog
 ./exe_prog
 cd ..
 ./studying/exe_prog
