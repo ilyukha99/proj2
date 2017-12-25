@@ -42,7 +42,7 @@ echo "
 int main() {
 	printf(\"how you doin?\");
 	return 0;
-}" >> program.c
+}" > program.c
 gcc exe_prog.c program.c
 ./exe_prog
 cd ..
