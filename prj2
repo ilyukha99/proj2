@@ -40,7 +40,7 @@ echo $PATH
 echo "
 #include <stdio.h>
 int main() {
-	printf(\"how you doin?\");
+	printf(\"how you doin?\\n\");
 	return 0;
 }" > program.c
 gcc program.c
