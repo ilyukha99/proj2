@@ -44,9 +44,9 @@ int main() {
 	return 0;
 }" > program.c
 gcc program.c
-./exe_prog
+./a.out
 cd ..
-./studying/exe_prog
+./studying/a.out
 cd studying/
 
 export PATH=$PATH:/home/students/17200/shevyakov
