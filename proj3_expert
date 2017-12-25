@@ -1,0 +1,29 @@
+#!/bin/bash
+
+wget -q factorized.net/patterns.txt
+
+wget -q factorized.net/crusoe.txt
+
+echo "all words that start with the letter Z"
+egrep  -y -o "\bz\w*\b" crusoe.txt
+
+echo "all the words from 16 letters"
+egrep  -y -o "\b\w{16}\b" crusoe.txt
+
+echo "all the words beginning with 'a' and ending in 'c'"
+egrep  -y -o "\ba\w*c\b" crusoe.txt
+
+echo "all the words beginning with 'ab' but the third letter is 'o'"
+egrep  -y -o "\babc{0}\w*\b" crusoe.txt
+
+echo "consist only of digits"
+egrep -y -x "[0-9]*" patterns.txt
+
+echo "consist only of letters"
+egrep -y -x "[^0-9]*" patterns.txt
+
+echo "Car's signs"
+egrep -x "[E|T|Y|O|P|A|H|K|X|C|B|M]{1}[0-9]{3}[E|T|Y|O|P|A|H|K|X|C|B|M]{2}[0-9]$
+
+rm crusoe.txt
+rm patterns.txt
