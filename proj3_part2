@@ -25,3 +25,7 @@ if [ "$3" == "mul" ]
 then
 echo "$(( $1*$2 ))"
 fi
+if [ "$3" == "sub" ]
+then
+echo "$(( $1-$2 ))"
+fi
