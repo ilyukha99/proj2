@@ -59,6 +59,6 @@ ls -la
 #rights: r - read, x - execute, w - write
 chmod 400 shared.txt
 chown usova shared.txt
-rm shared.txt
+rm -f shared.txt 
 #chown to right partner and return to left partner;
 #try this all with directories
