@@ -1,8 +1,27 @@
 #!/bin/bash
-
+#1
 count = $1
 while [ count -gt 0 ]
 do
 (( count-- ))
 echo "Hello world!"
 done
+
+#2
+#!/bin/bash
+echo "$(( $1+$2 ))"
+
+#3
+#!/bin/bash
+if [ "$3" == "add" ]
+then
+echo "$(( $1+$2 ))"
+fi
+if [ "$3" == "div" ]
+then
+echo "$(( $1/$2 ))"
+fi
+if [ "$3" == "mul" ]
+then
+echo "$(( $1*$2 ))"
+fi
