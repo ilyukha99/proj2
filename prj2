@@ -46,11 +46,11 @@ int main() {
 gcc program.c
 ./a.out
 cd ..
-./studying/a.out
-cd studying/
+./proj2/a.out
+cd proj2/
 
 export PATH=$PATH:/home/students/17200/shevyakov
-exe_prog
+a.out
 #3
 
 cd ~
