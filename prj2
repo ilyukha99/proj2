@@ -49,9 +49,9 @@ chmod 755 exe_prog
 cd ..
 ./studying/exe_prog
 cd studying/
-rm ./program.c ./exe_prog
-export PATH=$PATH:/home/students/17200/shevyakov
 
+export PATH=$PATH:/home/students/17200/shevyakov
+exe_prog
 #3
 
 cd ~
