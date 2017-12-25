@@ -49,7 +49,7 @@ cd ..
 ./proj2/a.out
 cd proj2/
 
-export PATH=$PATH:/home/students/17200/shevyakov
+export PATH=$PATH:/home/students/17200/shevyakov/proj2
 a.out
 #3
 
