@@ -43,7 +43,7 @@ int main() {
 	printf(\"how you doin?\");
 	return 0;
 }" > program.c
-gcc exe_prog.c program.c
+gcc program.c
 ./exe_prog
 cd ..
 ./studying/exe_prog
